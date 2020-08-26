@@ -17,7 +17,7 @@ Otherwise, same instructions as official Pi-Hole.&#xD;
     Also, if you set you router to give out the PiHole address to clients, make sure that you fixe the unRaid servers dns to point to a real DNS Server.</Overview>
   <Category>Security: Other: Network:DNS Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]/admin</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/spants/unraidtemplates/master/Spants/pihole.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/pihole-with-doh.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/testdasi/pihole-with-doh/master/pihole.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped</ExtraParams>
   <PostArgs/>
