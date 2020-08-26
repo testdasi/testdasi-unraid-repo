@@ -7,10 +7,10 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/96233-support-testdasi-repo/</Support>
   <Project>https://docs.pi-hole.net/guides/dns-over-https/</Project>
   <Overview>Pi-Hole - let's block those pesky ads! Now with DNS-over-HTTPS! DoH!&#xD;
-This uses the official Pi-Hole template and add Cloudflared to enable DoH.&#xD;
+This uses the official Pi-Hole template with added Cloudflared to enable DoH.&#xD;
 Set both DNS1 and DNS2 to 127.0.0.1#5053 will exclusively use DoH.&#xD;
 Otherwise, same instructions as official Pi-Hole.&#xD;
     Make sure that you use bridge mode and give PiHole it's own IP address.&#xD;
