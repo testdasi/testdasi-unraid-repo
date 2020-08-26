@@ -126,14 +126,14 @@ Otherwise, same instructions as official Pi-Hole.&#xD;
   <Config Name="Host Port 3" Target="67" Default="67" Mode="udp" Description="Container Port: 67" Type="Port" Display="always" Required="true" Mask="false">67</Config>
   <Config Name="Host Port 4" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
   <Config Name="Host Port 5" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
-  <Config Name="Host Path 1" Target="/etc/pihole/" Default="/mnt/cache/appdata/pihole/pihole/" Mode="rw" Description="Container Path: /etc/pihole/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/pihole/</Config>
-  <Config Name="Host Path 2" Target="/etc/dnsmasq.d/" Default="/mnt/cache/appdata/pihole/dnsmasq.d/" Mode="rw" Description="Container Path: /etc/dnsmasq.d/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/dnsmasq.d/</Config>
-  <Config Name="Key 1" Target="DNS1" Default="8.8.8.8" Mode="" Description="Container Variable: DNS1" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1#5053</Config>
-  <Config Name="Key 2" Target="DNS2" Default="8.8.4.4" Mode="" Description="Container Variable: DNS2" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1#5053</Config>
+  <Config Name="Host Path 1" Target="/etc/pihole/" Default="/mnt/user/appdata/pihole-doh/pihole/" Mode="rw" Description="Container Path: /etc/pihole/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/pihole/</Config>
+  <Config Name="Host Path 2" Target="/etc/dnsmasq.d/" Default="/mnt/user/appdata/pihole-doh/dnsmasq.d/" Mode="rw" Description="Container Path: /etc/dnsmasq.d/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/dnsmasq.d/</Config>
+  <Config Name="Key 1" Target="DNS1" Default="127.0.0.1#5053" Mode="" Description="Container Variable: DNS1" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1#5053</Config>
+  <Config Name="Key 2" Target="DNS2" Default="127.0.0.1#5053" Mode="" Description="Container Variable: DNS2" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1#5053</Config>
   <Config Name="Key 3" Target="TZ" Default="Europe/London" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Europe/London</Config>
-  <Config Name="Key 4" Target="WEBPASSWORD" Default="admin" Mode="" Description="Container Variable: WEBPASSWORD" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
-  <Config Name="Key 5" Target="INTERFACE" Default="br0" Mode="" Description="Container Variable: INTERFACE" Type="Variable" Display="always" Required="false" Mask="false">eth0</Config>
-  <Config Name="Key 6" Target="ServerIP" Default="192.168.1.24" Mode="" Description="Container Variable: ServerIP" Type="Variable" Display="always" Required="false" Mask="false">10.132.6.89</Config>
+  <Config Name="Key 4" Target="WEBPASSWORD" Default="password" Mode="" Description="Container Variable: WEBPASSWORD" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="Key 5" Target="INTERFACE" Default="br0" Mode="" Description="Container Variable: INTERFACE" Type="Variable" Display="always" Required="false" Mask="false">br0</Config>
+  <Config Name="Key 6" Target="ServerIP" Default="192.168.1.24" Mode="" Description="Container Variable: ServerIP" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.24</Config>
   <Config Name="Key 7" Target="ServerIPv6" Default="" Mode="" Description="Container Variable: ServerIPv6" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Key 8" Target="IPv6" Default="False" Mode="" Description="Container Variable: IPv6" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
   <Config Name="Key 9" Target="DNSMASQ_LISTENING" Default="all" Mode="" Description="Container Variable: DNSMASQ_LISTENING" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
