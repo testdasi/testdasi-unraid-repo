@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pihole-with-doh</Name>
+  <Repository>testdasi/pihole-with-doh</Repository>
+  <Registry>https://hub.docker.com/r/testdasi/pihole-with-doh/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://docs.pi-hole.net/guides/dns-over-https/</Project>
+  <Overview>Pi-Hole - let's block those pesky ads! Now with DNS-over-HTTPS! DoH!&#xD;
+This uses the official Pi-Hole template and add Cloudflared to enable DoH.&#xD;
+Set both DNS1 and DNS2 to 127.0.0.1#5053 will exclusively use DoH.&#xD;
+Otherwise, same instructions as official Pi-Hole.&#xD;
+    Make sure that you use bridge mode and give PiHole it's own IP address.&#xD;
+    Also, if you set you router to give out the PiHole address to clients, make sure that you fixe the unRaid servers dns to point to a real DNS Server.</Overview>
+  <Category>Security: Other: Network:DNS Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:80]/admin</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/spants/unraidtemplates/master/Spants/pihole.xml</TemplateURL>
+  <Icon>https://i.imgur.com/OWkNcEn.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1598469304</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Pi-Hole - let's block those pesky ads! Now with DNS-over-HTTPS! DoH!&#xD;
+This uses the official Pi-Hole template and add Cloudflared to enable DoH.&#xD;
+Set both DNS1 and DNS2 to 127.0.0.1#5053 will exclusively use DoH.&#xD;
+Otherwise, same instructions as official Pi-Hole.&#xD;
+    Make sure that you use bridge mode and give PiHole it's own IP address.&#xD;
+    Also, if you set you router to give out the PiHole address to clients, make sure that you fixe the unRaid servers dns to point to a real DNS Server.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>67</HostPort>
+        <ContainerPort>67</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pihole-doh/pihole/</HostDir>
+      <ContainerDir>/etc/pihole/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pihole-doh/dnsmasq.d/</HostDir>
+      <ContainerDir>/etc/dnsmasq.d/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>127.0.0.1#5053</Value>
+      <Name>DNS1</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>127.0.0.1#5053</Value>
+      <Name>DNS2</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Europe/London</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>WEBPASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>eth0</Value>
+      <Name>INTERFACE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>10.132.6.89</Value>
+      <Name>ServerIP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ServerIPv6</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>False</Value>
+      <Name>IPv6</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>all</Value>
+      <Name>DNSMASQ_LISTENING</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+  <Config Name="Host Port 2" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+  <Config Name="Host Port 3" Target="67" Default="67" Mode="udp" Description="Container Port: 67" Type="Port" Display="always" Required="true" Mask="false">67</Config>
+  <Config Name="Host Port 4" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Host Port 5" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
+  <Config Name="Host Path 1" Target="/etc/pihole/" Default="/mnt/cache/appdata/pihole/pihole/" Mode="rw" Description="Container Path: /etc/pihole/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/pihole/</Config>
+  <Config Name="Host Path 2" Target="/etc/dnsmasq.d/" Default="/mnt/cache/appdata/pihole/dnsmasq.d/" Mode="rw" Description="Container Path: /etc/dnsmasq.d/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/dnsmasq.d/</Config>
+  <Config Name="Key 1" Target="DNS1" Default="8.8.8.8" Mode="" Description="Container Variable: DNS1" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1#5053</Config>
+  <Config Name="Key 2" Target="DNS2" Default="8.8.4.4" Mode="" Description="Container Variable: DNS2" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1#5053</Config>
+  <Config Name="Key 3" Target="TZ" Default="Europe/London" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Europe/London</Config>
+  <Config Name="Key 4" Target="WEBPASSWORD" Default="admin" Mode="" Description="Container Variable: WEBPASSWORD" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="Key 5" Target="INTERFACE" Default="br0" Mode="" Description="Container Variable: INTERFACE" Type="Variable" Display="always" Required="false" Mask="false">eth0</Config>
+  <Config Name="Key 6" Target="ServerIP" Default="192.168.1.24" Mode="" Description="Container Variable: ServerIP" Type="Variable" Display="always" Required="false" Mask="false">10.132.6.89</Config>
+  <Config Name="Key 7" Target="ServerIPv6" Default="" Mode="" Description="Container Variable: ServerIPv6" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 8" Target="IPv6" Default="False" Mode="" Description="Container Variable: IPv6" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="Key 9" Target="DNSMASQ_LISTENING" Default="all" Mode="" Description="Container Variable: DNSMASQ_LISTENING" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+</Container>
