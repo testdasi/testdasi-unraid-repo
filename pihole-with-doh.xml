@@ -18,7 +18,7 @@ Otherwise, same instructions as official Pi-Hole.&#xD;
   <Category>Security: Other: Network:DNS Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]/admin</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/spants/unraidtemplates/master/Spants/pihole.xml</TemplateURL>
-  <Icon>https://i.imgur.com/OWkNcEn.png</Icon>
+  <Icon>https://raw.githubusercontent.com/testdasi/pihole-with-doh/master/pihole.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
