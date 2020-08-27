@@ -14,7 +14,7 @@
     &#xD;
     This docker uses the official Pi-Hole template with added Cloudflared to enable DoT (DNS-over-TLS).&#xD;
     &#xD;
-    Set both DNS1 and DNS2 to 127.0.1.1#853 will exclusively use DoT i.e. your DNS queries are encrypted.&#xD;
+    Set both DNS1 and DNS2 to 127.2.2.2#5253 will exclusively use DoT i.e. your DNS queries are encrypted.&#xD;
     &#xD;
   </Overview>
   <Category>Security: Other: Network:DNS Status:Stable</Category>
@@ -35,7 +35,7 @@
     Your DNS queries are now encrypted.
     &#xD;
     &#xD;
-    Set both DNS1 and DNS2 to 127.0.1.1#853 will exclusively use DoT. These are default values.&#xD;
+    Set both DNS1 and DNS2 to 127.2.2.2#5253 will exclusively use DoT. These are default values.&#xD;
     &#xD;
     Otherwise, same instructions as official Pi-Hole.&#xD;
     &#xD;
@@ -93,12 +93,12 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>127.0.1.1#853</Value>
+      <Value>127.2.2.2#5253</Value>
       <Name>DNS1</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>127.0.1.1#853</Value>
+      <Value>127.2.2.2#5253</Value>
       <Name>DNS2</Name>
       <Mode/>
     </Variable>
@@ -147,8 +147,8 @@
   <Config Name="pihole config" Target="/etc/pihole/" Default="/mnt/user/appdata/pihole-dot/pihole/" Mode="rw" Description="Container Path: /etc/pihole/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-dot/pihole/</Config>
   <Config Name="dnsmasq config" Target="/etc/dnsmasq.d/" Default="/mnt/user/appdata/pihole-dot/dnsmasq.d/" Mode="rw" Description="Container Path: /etc/dnsmasq.d/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-dot/dnsmasq.d/</Config>
   <Config Name="stubby config" Target="/etc/stubby/" Default="/mnt/user/appdata/pihole-doh/stubby/" Mode="rw" Description="Container Path: /etc/stubby/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/stubby/</Config>
-  <Config Name="ENV 1" Target="DNS1" Default="127.0.1.1#853" Mode="" Description="Container Variable: DNS1" Type="Variable" Display="always" Required="false" Mask="false">127.0.1.1#853</Config>
-  <Config Name="ENV 2" Target="DNS2" Default="127.0.1.1#853" Mode="" Description="Container Variable: DNS2" Type="Variable" Display="always" Required="false" Mask="false">127.0.1.1#853</Config>
+  <Config Name="ENV 1" Target="DNS1" Default="127.2.2.2#5253" Mode="" Description="Container Variable: DNS1" Type="Variable" Display="always" Required="false" Mask="false">127.2.2.2#5253</Config>
+  <Config Name="ENV 2" Target="DNS2" Default="127.2.2.2#5253" Mode="" Description="Container Variable: DNS2" Type="Variable" Display="always" Required="false" Mask="false">127.2.2.2#5253</Config>
   <Config Name="ENV 3" Target="TZ" Default="Europe/London" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Europe/London</Config>
   <Config Name="ENV 4" Target="WEBPASSWORD" Default="password" Mode="" Description="Container Variable: WEBPASSWORD" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
   <Config Name="ENV 5" Target="INTERFACE" Default="br0" Mode="" Description="Container Variable: INTERFACE" Type="Variable" Display="always" Required="false" Mask="false">br0</Config>
