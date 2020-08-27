@@ -85,6 +85,11 @@
       <ContainerDir>/etc/dnsmasq.d/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pihole-doh/cloudflared/</HostDir>
+      <ContainerDir>/etc/cloudflared/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment>
     <Variable>
@@ -141,6 +146,7 @@
   <Config Name="HTTPS Port" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
   <Config Name="pihole config" Target="/etc/pihole/" Default="/mnt/user/appdata/pihole-doh/pihole/" Mode="rw" Description="Container Path: /etc/pihole/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/pihole/</Config>
   <Config Name="dnsmasq config" Target="/etc/dnsmasq.d/" Default="/mnt/user/appdata/pihole-doh/dnsmasq.d/" Mode="rw" Description="Container Path: /etc/dnsmasq.d/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/dnsmasq.d/</Config>
+  <Config Name="cloudflared config" Target="/etc/cloudflared/" Default="/mnt/user/appdata/pihole-doh/cloudflared/" Mode="rw" Description="Container Path: /etc/cloudflared/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-doh/cloudflared/</Config>
   <Config Name="ENV 1" Target="DNS1" Default="127.1.1.1#5053" Mode="" Description="Container Variable: DNS1" Type="Variable" Display="always" Required="false" Mask="false">127.1.1.1#5053</Config>
   <Config Name="ENV 2" Target="DNS2" Default="127.1.1.1#5053" Mode="" Description="Container Variable: DNS2" Type="Variable" Display="always" Required="false" Mask="false">127.1.1.1#5053</Config>
   <Config Name="ENV 3" Target="TZ" Default="Europe/London" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Europe/London</Config>
