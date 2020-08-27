@@ -14,7 +14,7 @@
     &#xD;
     This docker uses the official Pi-Hole template with added Cloudflared to enable DoH (DNS-over-HTTPS).&#xD;
     &#xD;
-    Your DNS queries are now encrypted.
+    Set both DNS1 and DNS2 to 127.1.1.1#5053 will exclusively use DoH i.e. your DNS queries are encrypted.&#xD;
     &#xD;
   </Overview>
   <Category>Security: Other: Network:DNS Status:Stable</Category>
