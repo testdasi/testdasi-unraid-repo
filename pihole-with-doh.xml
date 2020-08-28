@@ -85,11 +85,6 @@
       <ContainerDir>/etc/dnsmasq.d/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/pihole-doh/cloudflared/</HostDir>
-      <ContainerDir>/etc/cloudflared/</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <Environment>
     <Variable>
