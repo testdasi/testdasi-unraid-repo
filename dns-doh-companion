@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DNS-DoH-companion</Name>
+  <Repository>testdasi/simple-dns-doh</Repository>
+  <Registry>https://hub.docker.com/r/testdasi/simple-dns-doh/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://lime-technology.com/forum/index.php?topic=50453.0</Support>
+  <Project>https://developers.cloudflare.com/1.1.1.1/dns-over-https/cloudflared-proxy/</Project>
+  <Overview>A very simple DNS server to connect to DNS-over-HTTPS service. This is similar to my other Pihole-with-DoH docker, without Pihole.&#xD;
+You have already browsed the web securely with https, don't send your DNS queries in plain text.&#xD;
+&#xD;
+This is useful if you want to route DNS through a OpenVPN client docker (using --net=container: extra parameter) or just want encrypted DNS for your network / devices without any bells and whistles.&#xD;
+&#xD;
+Make sure to assign an IP (macvlan bridge) or map 53 to a different port (normal bridge). Docker will not start otherwise.</Overview>
+  <Category>Network:DNS</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/testdasi/simple-dns-doh/master/DNS-icon.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1598613774</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A very simple DNS server to connect to DNS-over-HTTPS service. This is similar to my other Pihole-with-DoH docker, without Pihole.&#xD;
+You have already browsed the web securely with https, don't send your DNS queries in plain text.&#xD;
+&#xD;
+This is useful if you want to route DNS through a OpenVPN client docker (using --net=container: extra parameter) or just want encrypted DNS for your network / devices without any bells and whistles.&#xD;
+&#xD;
+Make sure to assign an IP (macvlan bridge) or map 53 to a different port (normal bridge). Docker will not start otherwise.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>53</HostPort>
+        <ContainerPort>53</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="DNS TCP" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="false" Mask="false">53</Config>
+  <Config Name="DNS UDP" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="false" Mask="false">53</Config>
+</Container>
