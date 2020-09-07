@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://lime-technology.com/forum/index.php?topic=50453.0</Support>
+  <Support>https://forums.unraid.net/topic/96233-support-testdasi-repo/</Support>
   <Project>https://developers.cloudflare.com/1.1.1.1/dns-over-https/cloudflared-proxy/</Project>
   <Overview>A very simple DNS server to connect to DNS-over-HTTPS service. This is similar to my other Pihole-with-DoH docker, without Pihole.&#xD;
 You have already browsed the web securely with https, don't send your DNS queries in plain text.&#xD;
