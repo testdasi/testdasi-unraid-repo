@@ -3,7 +3,7 @@
   <Name>rutorrentvpn-plus-plus</Name>
   <Repository>testdasi/rutorrentvpn-plus-plus</Repository>
   <Registry>https://registry.hub.docker.com/r/testdasi/rutorrentvpn-plus-plus/</Registry>
-  <Network>apps</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -18,7 +18,7 @@ High-level instructions:&#xD;
 &#xD;
 2. Copy / extract your ovpn files in the host path that is mapped to /config/ovpn_files (at least 1 file is required, must have .ovpn extension)&#xD;
 &#xD;
-3. If there are separate cert files (crt + pem), place them in host location path that is mapped to /config/ovpn&#xD;
+3. If there are separate cert files (crt + pem), place them in host location path that is mapped to /config/ovpn. Skip this step if using PIA ovpn files as certs are included in the files.&#xD;
 &#xD;
 4. Start docker again&#xD;
 &#xD;
@@ -42,13 +42,13 @@ High-level instructions:&#xD;
 &#xD;
 2. Copy / extract your ovpn files in the host path that is mapped to /config/ovpn_files (at least 1 file is required, must have .ovpn extension)&#xD;
 &#xD;
-3. If there are separate cert files (crt + pem), place them in host location path that is mapped to /config/ovpn&#xD;
+3. If there are separate cert files (crt + pem), place them in host location path that is mapped to /config/ovpn. Skip this step if using PIA ovpn files as certs are included in the files.&#xD;
 &#xD;
 4. Start docker again&#xD;
 &#xD;
 </Description>
   <Networking>
-    <Mode>apps</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>5000</HostPort>
