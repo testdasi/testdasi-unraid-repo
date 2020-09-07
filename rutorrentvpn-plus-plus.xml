@@ -207,7 +207,7 @@ High-level instructions:&#xD;
   <Config Name="rtorrent 5000" Target="5000" Default="5000" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
   <Config Name="ruTorrent Web" Target="9080" Default="9080" Mode="tcp" Description="Container Port: 9080" Type="Port" Display="always" Required="false" Mask="false">9080</Config>
   <Config Name="rtorrent 9443" Target="9443" Default="9443" Mode="tcp" Description="Container Port: 9443" Type="Port" Display="always" Required="false" Mask="false">9443</Config>
-  <Config Name="Privoxy port" Target="8118" Default="8118" Mode="tcp" Description="Container Port: 8118" Type="Port" Display="always" Required="false" Mask="false">8518</Config>
+  <Config Name="Privoxy port" Target="8118" Default="8118" Mode="tcp" Description="Container Port: 8118" Type="Port" Display="always" Required="false" Mask="false">8118</Config>
   <Config Name="VPN_ENABLED" Target="VPN_ENABLED" Default="yes" Mode="" Description="Container Variable: VPN_ENABLED" Type="Variable" Display="always" Required="false" Mask="false">yes</Config>
   <Config Name="VPN_USER" Target="VPN_USER" Default="VPN_USER" Mode="" Description="Container Variable: VPN_USER" Type="Variable" Display="always" Required="false" Mask="false">VPN_USER</Config>
   <Config Name="VPN_PASS" Target="VPN_PASS" Default="VPN_PASS" Mode="" Description="Container Variable: VPN_PASS" Type="Variable" Display="always" Required="false" Mask="false">VPN_PASS</Config>
