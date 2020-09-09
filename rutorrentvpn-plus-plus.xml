@@ -25,7 +25,7 @@ High-level instructions:&#xD;
 </Overview>
   <Category>Downloaders: Network:DNS Network:Proxy Network:VPN</Category>
   <WebUI>http://[IP]:[PORT:9080]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/rutorrentvpn-plus-plus.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/testdasi/rutorrentvpn-plus-plus/master/rtorrent.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
   <PostArgs/>
