@@ -34,7 +34,7 @@
   <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1598469305</DateInstalled>
+  <DateInstalled>1599766697</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>
