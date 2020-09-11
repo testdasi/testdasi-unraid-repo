@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>DNS-DoH-companion</Name>
-  <Repository>testdasi/simple-dns-doh</Repository>
+  <Repository>testdasi/simple-dns-doh:latest-amd64</Repository>
   <Registry>https://hub.docker.com/r/testdasi/simple-dns-doh/</Registry>
   <Network>bridge</Network>
   <MyIP/>
