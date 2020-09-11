@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>pihole-with-doh</Name>
-  <Repository>testdasi/pihole-with-doh</Repository>
+  <Repository>testdasi/pihole-with-doh:latest-amd64</Repository>
   <Registry>https://hub.docker.com/r/testdasi/pihole-with-doh/</Registry>
   <Network>bridge</Network>
   <MyIP/>
