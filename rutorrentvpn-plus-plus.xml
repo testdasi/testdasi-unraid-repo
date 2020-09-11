@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>rutorrentvpn-plus-plus</Name>
-  <Repository>testdasi/rutorrentvpn-plus-plus</Repository>
+  <Repository>testdasi/rutorrentvpn-plus-plus:latest</Repository>
   <Registry>https://registry.hub.docker.com/r/testdasi/rutorrentvpn-plus-plus/</Registry>
   <Network>bridge</Network>
   <MyIP/>
