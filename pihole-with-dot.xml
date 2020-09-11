@@ -124,7 +124,7 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value>10.132.6.89</Value>
+      <Value>192.168.1.24</Value>
       <Name>ServerIP</Name>
       <Mode/>
     </Variable>
