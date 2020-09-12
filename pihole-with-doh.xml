@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+<Deprecated>true</Deprecated>
+<ModeratorComment>This application has been deprecated in favour of pihole-dot-doh.</ModeratorComment>
 <Container version="2">
   <Name>pihole-with-doh</Name>
   <Repository>testdasi/pihole-with-doh:latest-amd64</Repository>
