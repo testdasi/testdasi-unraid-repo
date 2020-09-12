@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>OpenVPN-AIO-Client</Name>
-  <Repository>testdasi/openvpn-client-aio:latest-amd64</Repository>
+  <Repository>testdasi/openvpn-client-aio:stable-amd64</Repository>
   <Registry>https://registry.hub.docker.com/r/testdasi/openvpn-client-aio/</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -25,7 +25,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
   <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1599766698</DateInstalled>
+  <DateInstalled>1599766699</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>An "all-in-one" docker for all your private browsing needs (including OpenVPN client with nftables kill switch ; Socks5 + HTTP proxy to both VPN and TOR (the onion router) ; DNS server to DoT (DNS-over-TLS) services). &#xD;
