@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Deprecated>true</Deprecated>
-<ModeratorComment>This application has been deprecated in favour of pihole-dot-doh.</ModeratorComment>
 <Container version="2">
   <Name>pihole-with-doh</Name>
+  <Deprecated>true</Deprecated>
+  <ModeratorComment>This application has been deprecated in favour of pihole-dot-doh.</ModeratorComment>
   <Repository>testdasi/pihole-with-doh:latest-amd64</Repository>
   <Registry>https://hub.docker.com/r/testdasi/pihole-with-doh/</Registry>
   <Network>bridge</Network>
