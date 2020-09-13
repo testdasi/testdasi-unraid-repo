@@ -32,7 +32,7 @@
   <Category>Security: Other: Network:DNS Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]/admin</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/pihole-with-doh.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/testdasi/pihole-base-buster/master/pihole.png</Icon>
+  <Icon>https://raw.githubusercontent.com/testdasi/pihole-base-buster-plus/master/pi_hole_bw.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
