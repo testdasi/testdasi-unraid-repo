@@ -160,7 +160,7 @@
   <Config Name="ENV 2" Target="DNS2" Default="127.2.2.2#5253" Mode="" Description="Container Variable: DNS2" Type="Variable" Display="always" Required="true" Mask="false">127.2.2.2#5253</Config>
   <Config Name="ENV 3" Target="TZ" Default="Europe/London" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Europe/London</Config>
   <Config Name="ENV 4" Target="WEBPASSWORD" Default="password" Mode="" Description="Container Variable: WEBPASSWORD" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
-  <Config Name="ENV 5" Target="INTERFACE" Default="br0" Mode="" Description="Container Variable: INTERFACE" Type="Variable" Display="always" Required="false" Mask="false">br0</Config>
+  <Config Name="ENV 5" Target="INTERFACE" Default="eth0" Mode="" Description="Container Variable: INTERFACE" Type="Variable" Display="always" Required="false" Mask="false">eth0</Config>
   <Config Name="ENV 6" Target="ServerIP" Default="192.168.1.24" Mode="" Description="Container Variable: ServerIP" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.24</Config>
   <Config Name="ENV 7" Target="ServerIPv6" Default="" Mode="" Description="Container Variable: ServerIPv6" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="ENV 8" Target="IPv6" Default="False" Mode="" Description="Container Variable: IPv6" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
