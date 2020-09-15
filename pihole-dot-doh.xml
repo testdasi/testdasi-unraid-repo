@@ -51,27 +51,27 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>10053</HostPort>
+        <HostPort>53</HostPort>
         <ContainerPort>53</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>10053</HostPort>
+        <HostPort>53</HostPort>
         <ContainerPort>53</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
       <Port>
-        <HostPort>10067</HostPort>
+        <HostPort>67</HostPort>
         <ContainerPort>67</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
       <Port>
-        <HostPort>10080</HostPort>
+        <HostPort>80</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>10443</HostPort>
+        <HostPort>443</HostPort>
         <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -142,11 +142,11 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="DNS Port TCP" Target="10053" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">10053</Config>
-  <Config Name="DNS Port UDP" Target="10053" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">10053</Config>
-  <Config Name="DHCP Port" Target="10067" Default="67" Mode="udp" Description="Container Port: 67" Type="Port" Display="always" Required="true" Mask="false">10067</Config>
-  <Config Name="HTTP Port" Target="10080" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">10080</Config>
-  <Config Name="HTTPS Port" Target="10443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">10443</Config>
+  <Config Name="DNS Port TCP" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+  <Config Name="DNS Port UDP" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+  <Config Name="DHCP Port" Target="67" Default="67" Mode="udp" Description="Container Port: 67" Type="Port" Display="always" Required="true" Mask="false">67</Config>
+  <Config Name="HTTP Port" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="HTTPS Port" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
   <Config Name="pihole config" Target="/etc/pihole/" Default="/mnt/user/appdata/pihole-dot-doh/pihole/" Mode="rw" Description="Container Path: /etc/pihole/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-dot-doh/pihole/</Config>
   <Config Name="dnsmasq config" Target="/etc/dnsmasq.d/" Default="/mnt/user/appdata/pihole-dot-doh/dnsmasq.d/" Mode="rw" Description="Container Path: /etc/dnsmasq.d/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-dot-doh/dnsmasq.d/</Config>
   <Config Name="DoT DoH config" Target="/config/" Default="/mnt/user/appdata/pihole-dot-doh/config/" Mode="rw" Description="Container Path: /config/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pihole-dot-doh/config/</Config>
