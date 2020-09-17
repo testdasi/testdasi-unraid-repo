@@ -33,9 +33,9 @@
   <ExtraParams>--cap-add=NET_ADMIN --restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1599861526</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DateInstalled>1599861527</DateInstalled>
+  <DonateText>If you like my work, a donation to my gourmet burger fund is very much appreciated.</DonateText>
+  <DonateLink>https://paypal.me/mersenne</DonateLink>
   <Description>
     Pi-Hole - let's block those pesky ads! Now with DNS-over-HTTPS and DNS-over-TLS! pihole.doh!&#xD;
     Don't send your DNS queries in plain text.&#xD;
