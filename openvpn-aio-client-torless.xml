@@ -20,12 +20,12 @@ Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.0.1/2
 For more detailed instructions, refer to the support thread (https://lime-technology.com/forum/index.php?topic=50453.0) or project page (https://github.com/testdasi/openvpn-client-aio).</Overview>
   <Category>Security: Network:Web Network:DNS Network:Proxy Network:VPN Network:Other</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/openvpn-aio-client.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/openvpn-aio-client-torless.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/testdasi/openvpn-client-aio-base/master/openvpn-simple.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1599766700</DateInstalled>
+  <DateInstalled>1599766702</DateInstalled>
   <DonateText>If you like my work, a donation to my burger fund is very much appreciated.</DonateText>
   <DonateLink>https://paypal.me/mersenne</DonateLink>
   <Description>An "all-in-one" docker for all your private browsing needs (including OpenVPN client with nftables kill switch ; Socks5 + HTTP proxy to the VPN ; DNS server to DoT (DNS-over-TLS) services). It's the same as OpenVPN AIO Client docker but without TOR. &#xD;
