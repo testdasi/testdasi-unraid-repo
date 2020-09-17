@@ -26,7 +26,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1599766700</DateInstalled>
-  <DonateText>If you like my work, a donation to my gourmet burger fund is very much appreciated.</DonateText>
+  <DonateText>If you like my work, a donation to my burger fund is very much appreciated.</DonateText>
   <DonateLink>https://paypal.me/mersenne</DonateLink>
   <Description>An "all-in-one" docker for all your private browsing needs (including OpenVPN client with nftables kill switch ; Socks5 + HTTP proxy to both VPN and TOR (the onion router) ; DNS server to DoT (DNS-over-TLS) services). &#xD;
 &#xD;
