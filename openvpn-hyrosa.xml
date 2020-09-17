@@ -75,8 +75,8 @@ For more detailed instructions, refer to the support thread (https://lime-techno
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>8112</HostPort>
-        <ContainerPort>8112</ContainerPort>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
@@ -135,7 +135,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
       <Mode/>
     </Variable>
     <Variable>
-      <Value>8112</Value>
+      <Value>3000</Value>
       <Name>TORRENT_GUI_PORT</Name>
       <Mode/>
     </Variable>
@@ -161,14 +161,14 @@ For more detailed instructions, refer to the support thread (https://lime-techno
   <Config Name="HTTP proxy port" Target="8118" Default="8118" Mode="tcp" Description="Container Port: 8118" Type="Port" Display="always" Required="false" Mask="false">8118</Config>
   <Config Name="SABnzbdPlus HTTP GUI port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="SABnzbdPlus HTTPS GUI port" Target="8090" Default="8090" Mode="tcp" Description="Container Port: 8090" Type="Port" Display="always" Required="false" Mask="false">8090</Config>
-  <Config Name="RTorrent (Flood GUI) GUI port" Target="8112" Default="8112" Mode="tcp" Description="Container Port: 8112" Type="Port" Display="always" Required="false" Mask="false">8112</Config>
+  <Config Name="RTorrent Flood GUI port" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="NZBHydra2 GUI port" Target="5076" Default="5076" Mode="tcp" Description="Container Port: 5076" Type="Port" Display="always" Required="false" Mask="false">5076</Config>
   <Config Name="DNS_SERVER_PORT" Target="DNS_SERVER_PORT" Default="53" Mode="" Description="Container Variable: DNS_SERVER_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">53</Config>
   <Config Name="SOCKS_PROXY_PORT" Target="SOCKS_PROXY_PORT" Default="9118" Mode="" Description="Container Variable: SOCKS_PROXY_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">9118</Config>
   <Config Name="HTTP_PROXY_PORT" Target="HTTP_PROXY_PORT" Default="8118" Mode="" Description="Container Variable: HTTP_PROXY_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">8118</Config>
   <Config Name="USENET_HTTP_PORT" Target="USENET_HTTP_PORT" Default="8080" Mode="" Description="Container Variable: USENET_HTTP_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">8080</Config>
   <Config Name="USENET_HTTPS_PORT" Target="USENET_HTTPS_PORT" Default="8090" Mode="" Description="Container Variable: USENET_HTTPS_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">8090</Config>
-  <Config Name="TORRENT_GUI_PORT" Target="TORRENT_GUI_PORT" Default="8112" Mode="" Description="Container Variable: TORRENT_GUI_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">8112</Config>
+  <Config Name="TORRENT_GUI_PORT" Target="TORRENT_GUI_PORT" Default="3000" Mode="" Description="Container Variable: TORRENT_GUI_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">3000</Config>
   <Config Name="SEARCHER_GUI_PORT" Target="SEARCHER_GUI_PORT" Default="5076" Mode="" Description="Container Variable: SEARCHER_GUI_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">5076</Config>
   <Config Name="LANG" Target="LANG" Default="en_GB.UTF-8" Mode="" Description="Container Variable: LANG" Type="Variable" Display="advanced-hide" Required="false" Mask="false">en_GB.UTF-8</Config>
 </Container>
