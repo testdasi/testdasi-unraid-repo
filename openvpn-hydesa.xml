@@ -22,7 +22,7 @@ Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.0.1/2
 For more detailed instructions, refer to the support thread (https://lime-technology.com/forum/index.php?topic=50453.0) or project page (https://github.com/testdasi/openvpn-hydesa).</Overview>
   <Category>Downloaders: Security: Network:DNS Network:Proxy Network:VPN</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/openvpn-hydesa.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/testdasi/openvpn-hydesa-base/master/openvpn-hydesa.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
   <PostArgs/>
