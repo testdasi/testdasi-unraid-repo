@@ -89,7 +89,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/openvpn-hyrosa</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/root</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
@@ -151,7 +151,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/openvpn-hyrosa" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/openvpn-hyrosa</Config>
+  <Config Name="Appdata" Target="/root" Default="/mnt/user/appdata/openvpn-hyrosa" Mode="rw" Description="Container Path: /root" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/openvpn-hyrosa</Config>
   <Config Name="Downloads" Target="/data" Default="/mnt/user/downloads/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/</Config>
   <Config Name="DNS_SERVERS" Target="DNS_SERVERS" Default="127.2.2.2" Mode="" Description="Container Variable: DNS_SERVERS" Type="Variable" Display="always" Required="false" Mask="false">127.2.2.2</Config>
   <Config Name="HOST_NETWORK" Target="HOST_NETWORK" Default="192.168.0.1/24" Mode="" Description="Container Variable: HOST_NETWORK" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.0/24</Config>
