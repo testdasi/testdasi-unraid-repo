@@ -15,6 +15,8 @@ High-level instructions: (1) Create an appdata folder in host and create a openv
 &#xD;
 DON'T FORGET THE OVPN FILE!!!
 &#xD;
+Default login to flood is admin/flood
+&#xD;
 Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare services by default). Your DNS query out of the VPN exit will also be encrypted for even more security. Set it to other services IP's will use normal unencrypted services. &#xD;
 &#xD;
 Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.0.1/24.&#xD;
@@ -35,6 +37,8 @@ For more detailed instructions, refer to the support thread (https://lime-techno
 High-level instructions: (1) Create an appdata folder in host and create a openvpn subfolder. (2) Copy your OpenVPN configuration to the above openvpn subfolder (must include openvpn.ovpn + credentials + certs). (3) Don't forget to map /data in the docker to the host (you can map the parent or individual subfolders depending on needs). (4) Start docker (other apps should configure themselves on first run).&#xD;
 &#xD;
 DON'T FORGET THE OVPN FILE!!!
+&#xD;
+Default login to flood is admin/flood
 &#xD;
 Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare services by default). Your DNS query out of the VPN exit will also be encrypted for even more security. Set it to other services IP's will use normal unencrypted services. &#xD;
 &#xD;
