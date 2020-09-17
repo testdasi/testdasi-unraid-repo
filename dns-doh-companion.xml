@@ -22,9 +22,9 @@ Make sure to assign an IP (macvlan bridge) or map 53 to a different port (normal
   <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1598613774</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DateInstalled>1598613775</DateInstalled>
+  <DonateText>If you like my work, a donation to my gourmet burger fund is very much appreciated.</DonateText>
+  <DonateLink>https://paypal.me/mersenne</DonateLink>
   <Description>A very simple DNS server to connect to DNS-over-HTTPS service. This is similar to my other Pihole-with-DoH docker, without Pihole.&#xD;
 You have already browsed the web securely with https, don't send your DNS queries in plain text.&#xD;
 &#xD;
