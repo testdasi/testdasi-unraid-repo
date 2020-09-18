@@ -119,7 +119,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
       <Mode/>
     </Variable>
     <Variable>
-      <Value>192.168.1.1</Value>
+      <Value>192.168.1.2</Value>
       <Name>SERVER_IP</Name>
       <Mode/>
     </Variable>
@@ -174,7 +174,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
   <Config Name="Downloads" Target="/data" Default="/mnt/user/downloads/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/</Config>
   <Config Name="DNS_SERVERS" Target="DNS_SERVERS" Default="127.2.2.2" Mode="" Description="Container Variable: DNS_SERVERS" Type="Variable" Display="always" Required="false" Mask="false">127.2.2.2</Config>
   <Config Name="HOST_NETWORK" Target="HOST_NETWORK" Default="192.168.1.0/24" Mode="" Description="Container Variable: HOST_NETWORK" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.0/24</Config>
-  <Config Name="SERVER_IP" Target="SERVER_IP" Default="192.168.1.1" Mode="" Description="Container Variable: SERVER_IP" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.1</Config>
+  <Config Name="SERVER_IP" Target="SERVER_IP" Default="192.168.1.2" Mode="" Description="Container Variable: SERVER_IP" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.2</Config>
   <Config Name="Web GUI launcher port" Target="8000" Default="8000" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="DNS server TCP port" Target="53" Default="8153" Mode="tcp" Description="Container Port: 53" Type="Port" Display="always" Required="false" Mask="false">8153</Config>
   <Config Name="DNS server UDP port" Target="53" Default="8153" Mode="udp" Description="Container Port: 53" Type="Port" Display="always" Required="false" Mask="false">8153</Config>
