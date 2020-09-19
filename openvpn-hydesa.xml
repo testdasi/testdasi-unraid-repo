@@ -23,7 +23,7 @@ Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.1.0/2
 &#xD;
 For more detailed instructions, refer to the support thread (https://lime-technology.com/forum/index.php?topic=50453.0) or project page (https://github.com/testdasi/openvpn-hydesa).</Overview>
   <Category>Downloaders: Security: Network:DNS Network:Proxy Network:VPN</Category>
-  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/openvpn-hydesa.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/testdasi/openvpn-hydesa-base/master/openvpn-hydesa.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN</ExtraParams>
@@ -171,7 +171,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
   </Environment>
   <Labels/>
   <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/openvpn-hydesa" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/openvpn-hydesa</Config>
-  <Config Name="Downloads" Target="/data" Default="/mnt/user/downloads/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/</Config>
+  <Config Name="Downloads" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="DNS_SERVERS" Target="DNS_SERVERS" Default="127.2.2.2" Mode="" Description="Container Variable: DNS_SERVERS" Type="Variable" Display="always" Required="false" Mask="false">127.2.2.2</Config>
   <Config Name="HOST_NETWORK" Target="HOST_NETWORK" Default="192.168.1.0/24" Mode="" Description="Container Variable: HOST_NETWORK" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.0/24</Config>
   <Config Name="SERVER_IP" Target="SERVER_IP" Default="192.168.1.2" Mode="" Description="Container Variable: SERVER_IP" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.2</Config>
