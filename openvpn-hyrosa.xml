@@ -171,7 +171,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
   </Environment>
   <Labels/>
   <Config Name="Appdata" Target="/root" Default="/mnt/user/appdata/openvpn-hyrosa" Mode="rw" Description="Container Path: /root" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/openvpn-hyrosa</Config>
-  <Config Name="Downloads" Target="/data" Default="/mnt/user/downloads/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Downloads" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="DNS_SERVERS" Target="DNS_SERVERS" Default="127.2.2.2" Mode="" Description="Container Variable: DNS_SERVERS" Type="Variable" Display="always" Required="false" Mask="false">127.2.2.2</Config>
   <Config Name="HOST_NETWORK" Target="HOST_NETWORK" Default="192.168.1.0/24" Mode="" Description="Container Variable: HOST_NETWORK" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.0/24</Config>
   <Config Name="SERVER_IP" Target="SERVER_IP" Default="192.168.1.2" Mode="" Description="Container Variable: SERVER_IP" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.2</Config>
