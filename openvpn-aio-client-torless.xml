@@ -15,7 +15,7 @@ NOTE: you must place your own OpenVPN configuration to the host path that is map
 &#xD;
 Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare services by default). Your DNS query out of the VPN exit will also be encrypted for even more security. Set it to other services IP's will use normal unencrypted services. &#xD;
 &#xD;
-Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.0.1/24.&#xD;
+Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.1.0/24.&#xD;
 &#xD;
 For more detailed instructions, refer to the support thread (https://lime-technology.com/forum/index.php?topic=50453.0) or project page (https://github.com/testdasi/openvpn-client-aio).</Overview>
   <Category>Security: Network:Web Network:DNS Network:Proxy Network:VPN Network:Other</Category>
@@ -34,7 +34,7 @@ NOTE: you must place your own OpenVPN configuration to the host path that is map
 &#xD;
 Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare services by default). Your DNS query out of the VPN exit will also be encrypted for even more security. Set it to other services IP's will use normal unencrypted services. &#xD;
 &#xD;
-Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.0.1/24.&#xD;
+Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.1.0/24.&#xD;
 &#xD;
 For more detailed instructions, refer to the support thread (https://lime-technology.com/forum/index.php?topic=50453.0) or project page (https://github.com/testdasi/openvpn-client-aio).</Description>
   <Networking>
@@ -86,7 +86,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
       <Mode/>
     </Variable>
     <Variable>
-      <Value>192.168.0.1/24</Value>
+      <Value>192.168.1.0/24</Value>
       <Name>HOST_NETWORK</Name>
       <Mode/>
     </Variable>
@@ -125,7 +125,7 @@ For more detailed instructions, refer to the support thread (https://lime-techno
   <Config Name="Socks5 proxy to TOR" Target="9119" Default="9119" Mode="tcp" Description="Container Port: 9119" Type="Port" Display="always" Required="false" Mask="false">9119</Config>
   <Config Name="HTTP Proxy to TOR" Target="8119" Default="8119" Mode="tcp" Description="Container Port: 8119" Type="Port" Display="always" Required="false" Mask="false">8119</Config>
   <Config Name="DNS_SERVERS" Target="DNS_SERVERS" Default="127.2.2.2" Mode="" Description="Container Variable: DNS_SERVERS" Type="Variable" Display="always" Required="false" Mask="false">127.2.2.2</Config>
-  <Config Name="HOST_NETWORK" Target="HOST_NETWORK" Default="192.168.0.1/24" Mode="" Description="Container Variable: HOST_NETWORK" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.1/24</Config>
+  <Config Name="HOST_NETWORK" Target="HOST_NETWORK" Default="192.168.1.0/24" Mode="" Description="Container Variable: HOST_NETWORK" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.0/24</Config>
   <Config Name="DNS_SERVER_PORT" Target="DNS_SERVER_PORT" Default="53" Mode="" Description="Container Variable: DNS_SERVER_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">53</Config>
   <Config Name="SOCKS_PROXY_PORT" Target="SOCKS_PROXY_PORT" Default="9118" Mode="" Description="Container Variable: SOCKS_PROXY_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">9118</Config>
   <Config Name="HTTP_PROXY_PORT" Target="HTTP_PROXY_PORT" Default="8118" Mode="" Description="Container Variable: HTTP_PROXY_PORT" Type="Variable" Display="advanced-hide" Required="false" Mask="false">8118</Config>
