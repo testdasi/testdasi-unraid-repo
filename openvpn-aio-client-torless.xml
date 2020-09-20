@@ -17,7 +17,7 @@ Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare serv
 &#xD;
 Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.1.0/24.&#xD;
 &#xD;
-For more detailed instructions, refer to the support thread (https://lime-technology.com/forum/index.php?topic=50453.0) or project page (https://github.com/testdasi/openvpn-client-aio).</Overview>
+For more detailed instructions, refer to the support thread (https://forums.unraid.net/topic/96233-support-testdasi-repo/) or project page (https://github.com/testdasi/openvpn-client-aio).</Overview>
   <Category>Security: Network:Web Network:DNS Network:Proxy Network:VPN Network:Other</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/openvpn-aio-client-torless.xml</TemplateURL>
@@ -36,7 +36,7 @@ Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare serv
 &#xD;
 Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.1.0/24.&#xD;
 &#xD;
-For more detailed instructions, refer to the support thread (https://lime-technology.com/forum/index.php?topic=50453.0) or project page (https://github.com/testdasi/openvpn-client-aio).</Description>
+For more detailed instructions, refer to the support thread (https://forums.unraid.net/topic/96233-support-testdasi-repo/) or project page (https://github.com/testdasi/openvpn-client-aio).</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
