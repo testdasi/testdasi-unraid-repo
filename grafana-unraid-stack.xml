@@ -21,7 +21,7 @@ For more detailed instructions, refer to the support thread (https://forums.unra
 </Overview>
   <Category>Productivity: Tools: Other:</Category>
   <WebUI>http://[IP]:[PORT:3006]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/testdasi/testdasi-unraid-repo/master/grafana-unraid-stack.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/testdasi/grafana-unraid-stack-base/master/grafana-unraid-stack.png</Icon>
   <ExtraParams/>
   <PostArgs/>
