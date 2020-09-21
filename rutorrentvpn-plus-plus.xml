@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>rutorrentvpn-plus-plus</Name>
   <Deprecated>true</Deprecated>
-  <ModeratorComment>This application has been deprecated. Binhex has implemented multi-remote functionality, rendering this one redundant. Please use binhex official docker instead.</ModeratorComment>
+  <ModeratorComment>This application has been deprecated. Binhex has implemented multi-remote functionality so please use his official docker instead.</ModeratorComment>
   <Repository>testdasi/rutorrentvpn-plus-plus:latest</Repository>
   <Registry>https://registry.hub.docker.com/r/testdasi/rutorrentvpn-plus-plus/</Registry>
   <Network>bridge</Network>
