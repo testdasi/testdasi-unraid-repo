@@ -9,15 +9,17 @@
   <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/96233-support-testdasi-repo/</Support>
   <Project>https://github.com/testdasi/grafana-unraid-stack</Project>
-  <Overview>Meet Gus! He has everything you need to start monitoring Unraid in style (Grafana - Influxdb - Telegraf - Loki - Promtail).&#xD;
+  <Overview>
+Meet Gus! He has everything you need to start monitoring Unraid in style (Grafana - Influxdb - Telegraf - Loki - Promtail).&#xD;
 &#xD;
-A sleek made-for-Unraid dashboard is pre-installed. (Preview: https://raw.githubusercontent.com/testdasi/grafana-unraid-stack-base/master/grafana-unraid-stack-screen.png).&#xD;
+NOTE: Grafana always requires some customisation to suit each exact system.&#xD;
 &#xD;
-Compatible with Ultimate UNRAID Dashboard (UUD).&#xD;
+Includes both GUS demo Dashboard and Ultimate UNRAID Dashboard (UUD - https://forums.unraid.net/topic/96895-ultimate-unraid-dashboard-uud/).&#xD;
 &#xD;
-High-level instructions: (1) Decide whether you want hddtemp or S.M.A.R.T (smartmontools) and set USE_HDDTEMP variable accordingly.  (2) Install docker with host network. (3). Go to ip:3006 to access grafana, login with admin/admin and customize the default dashboard.&#xD;
+High-level instructions: (1) Decide whether you want hddtemp or S.M.A.R.T (smartmontools) and set USE_HDDTEMP variable accordingly.  (2) Install docker with host network. (3). Go to ip:3006 to access grafana, login with admin/admin and customize away.&#xD;
 &#xD;
 For more detailed instructions, refer to the support thread (https://forums.unraid.net/topic/96233-support-testdasi-repo/) or project page (https://github.com/testdasi/grafana-unraid-stack).&#xD;
+&#xD;
 </Overview>
   <Category>Productivity: Tools: Other:</Category>
   <WebUI>http://[IP]:[PORT:3006]/</WebUI>
@@ -29,15 +31,17 @@ For more detailed instructions, refer to the support thread (https://forums.unra
   <DateInstalled>1600632949</DateInstalled>
   <DonateText>If you like my work, a donation to my burger fund is very much appreciated.</DonateText>
   <DonateLink>https://paypal.me/mersenne</DonateLink>
-  <Description>Meet Gus! He has everything you need to start monitoring Unraid in style (Grafana - Influxdb - Telegraf - Loki - Promtail).&#xD;
+  <Description>
+Meet Gus! He has everything you need to start monitoring Unraid in style (Grafana - Influxdb - Telegraf - Loki - Promtail).&#xD;
 &#xD;
-A sleek made-for-Unraid dashboard is pre-installed. (Preview: https://raw.githubusercontent.com/testdasi/grafana-unraid-stack-base/master/grafana-unraid-stack-screen.png).&#xD;
+NOTE: Grafana always requires some customisation to suit each exact system.&#xD;
 &#xD;
-Compatible with Ultimate UNRAID Dashboard (UUD).&#xD;
+Includes both GUS demo Dashboard and Ultimate UNRAID Dashboard (UUD - https://forums.unraid.net/topic/96895-ultimate-unraid-dashboard-uud/).&#xD;
 &#xD;
-High-level instructions: (1) Decide whether you want hddtemp or S.M.A.R.T (smartmontools) and set USE_HDDTEMP variable accordingly.  (2) Install docker with host network. (3). Go to ip:3006 to access grafana, login with admin/admin and customize the default dashboard.&#xD;
+High-level instructions: (1) Decide whether you want hddtemp or S.M.A.R.T (smartmontools) and set USE_HDDTEMP variable accordingly.  (2) Install docker with host network. (3). Go to ip:3006 to access grafana, login with admin/admin and customize away.&#xD;
 &#xD;
 For more detailed instructions, refer to the support thread (https://forums.unraid.net/topic/96233-support-testdasi-repo/) or project page (https://github.com/testdasi/grafana-unraid-stack).&#xD;
+&#xD;
 </Description>
   <Networking>
     <Mode>host</Mode>
