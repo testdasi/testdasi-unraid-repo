@@ -152,6 +152,7 @@ For more detailed instructions, refer to the support thread (https://forums.unra
   <Config Name="Telegraf 4" Target="/rootfs/sys" Default="/sys" Mode="ro" Description="Container Path: /rootfs/sys" Type="Path" Display="advanced-hide" Required="false" Mask="false">/sys</Config>
   <Config Name="Telegraf 5" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="Container Path: /var/run/docker.sock" Type="Path" Display="advanced-hide" Required="false" Mask="false">/var/run/docker.sock</Config>
   <Config Name="Telegraf 6" Target="/var/run/utmp" Default="/var/run/utmp" Mode="ro" Description="Container Path: /var/run/utmp" Type="Path" Display="advanced-hide" Required="false" Mask="false">/var/run/utmp</Config>
+  <Config Name="Telegraf 7" Target="/run/udev" Default="/run/udev" Mode="ro" Description="Container Path: /run/udev" Type="Path" Display="advanced-hide" Required="false" Mask="false">/run/udev</Config>
   <Config Name="HOST_ETC" Target="HOST_ETC" Default="/rootfs/etc" Mode="" Description="Container Variable: HOST_ETC" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/rootfs/etc</Config>
   <Config Name="HOST_PROC" Target="HOST_PROC" Default="/rootfs/proc" Mode="" Description="Container Variable: HOST_PROC" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/rootfs/proc</Config>
   <Config Name="HOST_SYS" Target="HOST_SYS" Default="/rootfs/sys" Mode="" Description="Container Variable: HOST_SYS" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/rootfs/sys</Config>
