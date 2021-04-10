@@ -3,7 +3,7 @@
   <Name>pihole-with-dot</Name>
   <Deprecated>true</Deprecated>
   <ModeratorComment>This application has been deprecated in favour of pihole-dot-doh.</ModeratorComment>
-  <Repository>testdasi/pihole-with-dot:latest-amd64</Repository>
+  <Repository>testdasi/pihole-with-dot:latest</Repository>
   <Registry>https://hub.docker.com/r/testdasi/pihole-with-dot/</Registry>
   <Network>bridge</Network>
   <MyIP/>
