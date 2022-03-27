@@ -27,7 +27,7 @@ NOTES:&#xD;
 &#xD;
 (5b) If the above is too complicated for youz, just run it without TLS (set DOCKER_TLS_CERTDIR variable to blank). But be mindful that docker has been screaming that this will be deprecated in a (yet-undetermined) future version. And you will need to map 2375 port.
 &#xD;
-(6) You don't need to map both 2375 and 2376.
+(6) You don't need to map both 2375 and 2376. 2375 for non-TLS. 2376 for TLS.
   </Overview>
   <Category>Productivity: Tools: Other:</Category>
   <WebUI/>
@@ -57,7 +57,7 @@ NOTES:&#xD;
 &#xD;
 (5b) If the above is too complicated for youz, just run it without TLS (set DOCKER_TLS_CERTDIR variable to blank). But be mindful that docker has been screaming that this will be deprecated in a (yet-undetermined) future version. And you will need to map 2375 port.
 &#xD;
-(6) You don't need to map both 2375 and 2376.
+(6) You don't need to map both 2375 and 2376. 2375 for non-TLS. 2376 for TLS.
   </Description>
   <Networking>
     <Mode>bridge</Mode>
