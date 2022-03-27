@@ -21,7 +21,7 @@ NOTES:&#xD;
 &#xD;
 (4) I do NOT recommend mapping /var/lib/docker (i.e. the equivalent to Unraid docker image) unless you actually need it. I don't map it and just delete dangling volume using user scripts.
 &#xD;
-(5) This template has TLS enabled by default and the certs will be saved at wherever you map /certs to on the host. If the /certs is empty, a script will automatically create certificates for you. Port 2376 is used to access docker service through TCP with TLS. As always, buildx will require the full set of certificates to authenticate but note VERY IMPORTANTLY: you have to set it up using DNS name (e.g. by adding the docker name and the Unraid server IP to /etc/hosts and set buildx to use [dockername]:2376) and not directly by IP.
+(5) This template has TLS enabled by default and the certs will be saved at wherever you map /certs to on the host. If the /certs is empty, a script will automatically create certificates for you. Port 2376 is used to access docker service through TCP with TLS. As always, buildx will require the full set of certificates to authenticate but note VERY IMPORTANTLY: you have to set it up using DNS name (e.g. by adding the docker name and the Unraid server IP to /etc/hosts and set buildx to use docker_name:2376) and not directly by IP.
 &#xD;
 (5a) Alternatively, once the certificates have been generated (i.e. docker was run at least once), you need to map the FILE /certs/server/openssl.conf to a host file as READ-ONLY (to prevent the docker TLS generator script from overwriting it) + make your appropriate edits + delete the rest of the /certs folder content and let the certificate generator script run again for new certs. You can even do wildcard and stuff like that but I'm not going into details here.
 &#xD;
@@ -51,7 +51,7 @@ NOTES:&#xD;
 &#xD;
 (4) I do NOT recommend mapping /var/lib/docker (i.e. the equivalent to Unraid docker image) unless you actually need it. I don't map it and just delete dangling volume using user scripts.
 &#xD;
-(5) This template has TLS enabled by default and the certs will be saved at wherever you map /certs to on the host. If the /certs is empty, a script will automatically create certificates for you. Port 2376 is used to access docker service through TCP with TLS. As always, buildx will require the full set of certificates to authenticate but note VERY IMPORTANTLY: you have to set it up using DNS name (e.g. by adding the docker name and the Unraid server IP to /etc/hosts and set buildx to use [dockername]:2376) and not directly by IP.
+(5) This template has TLS enabled by default and the certs will be saved at wherever you map /certs to on the host. If the /certs is empty, a script will automatically create certificates for you. Port 2376 is used to access docker service through TCP with TLS. As always, buildx will require the full set of certificates to authenticate but note VERY IMPORTANTLY: you have to set it up using DNS name (e.g. by adding the docker name and the Unraid server IP to /etc/hosts and set buildx to use docker_name:2376) and not directly by IP.
 &#xD;
 (5a) Alternatively, once the certificates have been generated (i.e. docker was run at least once), you need to map the FILE /certs/server/openssl.conf to a host file as READ-ONLY (to prevent the docker TLS generator script from overwriting it) + make your appropriate edits + delete the rest of the /certs folder content and let the certificate generator script run again for new certs. You can even do wildcard and stuff like that but I'm not going into details here.
 &#xD;
