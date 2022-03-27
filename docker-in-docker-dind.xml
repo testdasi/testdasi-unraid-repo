@@ -25,7 +25,7 @@ NOTES:&#xD;
 &#xD;
 (5a) Alternatively, once the certificates have been generated (i.e. docker was run at least once), you need to map the FILE /certs/server/openssl.conf to a host file as READ-ONLY (to prevent the docker TLS generator script from overwriting it) + make your appropriate edits + delete the rest of the /certs folder content and let the certificate generator script run again for new certs. You can even do wildcard and stuff like that but I'm not going into details here.
 &#xD;
-(5b) If the above is too complicated for youz, just run it without TLS (set DOCKER_TLS_CERTDIR variable to blank). But be mindful that docker has been screaming that this will be deprecated in a (yet-undetermined) future version. And you will need to map 2375 port.
+(5b) If the above is too complicated for you, just run it without TLS (set DOCKER_TLS_CERTDIR variable to blank). But be mindful that docker has been screaming that this will be deprecated in a (yet-undetermined) future version. And you will need to map 2375 port.
 &#xD;
 (6) You don't need to map both 2375 and 2376. 2375 for non-TLS. 2376 for TLS.
   </Overview>
@@ -55,7 +55,7 @@ NOTES:&#xD;
 &#xD;
 (5a) Alternatively, once the certificates have been generated (i.e. docker was run at least once), you need to map the FILE /certs/server/openssl.conf to a host file as READ-ONLY (to prevent the docker TLS generator script from overwriting it) + make your appropriate edits + delete the rest of the /certs folder content and let the certificate generator script run again for new certs. You can even do wildcard and stuff like that but I'm not going into details here.
 &#xD;
-(5b) If the above is too complicated for youz, just run it without TLS (set DOCKER_TLS_CERTDIR variable to blank). But be mindful that docker has been screaming that this will be deprecated in a (yet-undetermined) future version. And you will need to map 2375 port.
+(5b) If the above is too complicated for you, just run it without TLS (set DOCKER_TLS_CERTDIR variable to blank). But be mindful that docker has been screaming that this will be deprecated in a (yet-undetermined) future version. And you will need to map 2375 port.
 &#xD;
 (6) You don't need to map both 2375 and 2376. 2375 for non-TLS. 2376 for TLS.
   </Description>
