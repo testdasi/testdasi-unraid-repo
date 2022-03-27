@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Docker-in-Docker</Name>
+  <Repository>docker:dind</Repository>
+  <Registry>https://registry.hub.docker.com/_/docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/96233-support-testdasi-repo/</Support>
+  <Project>https://github.com/docker-library/docker</Project>
+  <Overview>Unraid template for the official Docker-in-Docker (aka DinD) image. Build docker images directly using your Unraid server as a node i.e. without needing to run a VM - just expose TCP port like you would for a network build node. This is NOT a start-it-and-forget-it set up so PLEASE READ THE NOTES.&#xD;
+&#xD;
+NOTES:&#xD;
+&#xD;
+(1) I'm not affiliated with Docker. I just realised nobody created an Unraid template for this really useful image that I have been using for a while (e.g. all my Unraid docker images are built on this via buildx node) so I share this for the community. If Docker ever has an official template then I'll deprecate this one.&#xD;
+&#xD;
+(2) Must be run in Bridge network mode. Don't bother doing macvlan (aka "br0" / "br1" Unraid docker network), the child dockers will always fail due to lack DNS resolving errors. Don't bother with host network, it crashes my whole docker network every time, requiring a reboot to reset.&#xD;
+&#xD;
+(3) It is possible to run this rootless / without privileged with the appropriate image tag and config but I could never get it to work properly. Hence, this template requires to run docker with root in privileged mode - with all the usual warning about it.
+&#xD;
+(4) I do NOT recommend mapping /var/lib/docker (i.e. the equivalent to Unraid docker image) unless you actually need it. I don't map it and just delete dangling volume using user scripts.
+&#xD;
+(5) This template has TLS enabled by default and the certs will be saved at wherever you map /certs to on the host. If the /certs is empty, a script will automatically create certificates for you. Port 2376 is used to access docker service through TCP with TLS. As always, buildx will require the full set of certificates to authenticate but note VERY IMPORTANTLY: you have to set it up using DNS name (e.g. by adding the docker name and the Unraid server IP to /etc/hosts and set buildx to use [dockername]:2376) and not directly by IP.
+&#xD;
+(5a) Alternatively, once the certificates have been generated (i.e. docker was run at least once), you need to map the FILE /certs/server/openssl.conf to a host file as READ-ONLY (to prevent the docker TLS generator script from overwriting it) + make your appropriate edits + delete the rest of the /certs folder content and let the certificate generator script run again for new certs. You can even do wildcard and stuff like that but I'm not going into details here.
+&#xD;
+(5b) If the above is too complicated for youz, just run it without TLS (set DOCKER_TLS_CERTDIR variable to blank). But be mindful that docker has been screaming that this will be deprecated in a (yet-undetermined) future version. And you will need to map 2375 port.
+&#xD;
+(6) You don't need to map both 2375 and 2376.
+  </Overview>
+  <Category>Productivity: Tools: Other:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://avatars.githubusercontent.com/u/11618900?s=120&amp;amp;v=4</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1648320412</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Unraid template for the official Docker-in-Docker (aka DinD) image. Build docker images directly using your Unraid server as a node i.e. without needing to run a VM - just expose TCP port like you would for a network build node. This is NOT a start-it-and-forget-it set up so PLEASE READ THE NOTES.&#xD;
+&#xD;
+NOTES:&#xD;
+&#xD;
+(1) I'm not affiliated with Docker. I just realised nobody created an Unraid template for this really useful image that I have been using for a while (e.g. all my Unraid docker images are built on this via buildx node) so I share this for the community. If Docker ever has an official template then I'll deprecate this one.&#xD;
+&#xD;
+(2) Must be run in Bridge network mode. Don't bother doing macvlan (aka "br0" / "br1" Unraid docker network), the child dockers will always fail due to lack DNS resolving errors. Don't bother with host network, it crashes my whole docker network every time, requiring a reboot to reset.&#xD;
+&#xD;
+(3) It is possible to run this rootless / without privileged with the appropriate image tag and config but I could never get it to work properly. Hence, this template requires to run docker with root in privileged mode - with all the usual warning about it.
+&#xD;
+(4) I do NOT recommend mapping /var/lib/docker (i.e. the equivalent to Unraid docker image) unless you actually need it. I don't map it and just delete dangling volume using user scripts.
+&#xD;
+(5) This template has TLS enabled by default and the certs will be saved at wherever you map /certs to on the host. If the /certs is empty, a script will automatically create certificates for you. Port 2376 is used to access docker service through TCP with TLS. As always, buildx will require the full set of certificates to authenticate but note VERY IMPORTANTLY: you have to set it up using DNS name (e.g. by adding the docker name and the Unraid server IP to /etc/hosts and set buildx to use [dockername]:2376) and not directly by IP.
+&#xD;
+(5a) Alternatively, once the certificates have been generated (i.e. docker was run at least once), you need to map the FILE /certs/server/openssl.conf to a host file as READ-ONLY (to prevent the docker TLS generator script from overwriting it) + make your appropriate edits + delete the rest of the /certs folder content and let the certificate generator script run again for new certs. You can even do wildcard and stuff like that but I'm not going into details here.
+&#xD;
+(5b) If the above is too complicated for youz, just run it without TLS (set DOCKER_TLS_CERTDIR variable to blank). But be mindful that docker has been screaming that this will be deprecated in a (yet-undetermined) future version. And you will need to map 2375 port.
+&#xD;
+(6) You don't need to map both 2375 and 2376.
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>2376</HostPort>
+        <ContainerPort>2376</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>2375</HostPort>
+        <ContainerPort>2375</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/dind/certs</HostDir>
+      <ContainerDir>/certs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/dind/docker</HostDir>
+      <ContainerDir>/var/lib/docker</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>/certs</Value>
+      <Name>DOCKER_TLS_CERTDIR</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="TLS TCP Port" Target="2376" Default="2376" Mode="tcp" Description="Container Port: 2376" Type="Port" Display="always" Required="false" Mask="false">2376</Config>
+  <Config Name="Non-TLS TCP Port" Target="2375" Default="2375" Mode="tcp" Description="Container Port: 2375" Type="Port" Display="always" Required="false" Mask="false">2375</Config>
+  <Config Name="Certificate" Target="/certs" Default="/mnt/cache/appdata/dind/certs" Mode="rw" Description="Container Path: /certs" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/dind/certs</Config>
+  <Config Name="Docker storage" Target="/var/lib/docker" Default="/mnt/cache/appdata/dind/docker" Mode="rw" Description="Container Path: /var/lib/docker" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/dind/docker</Config>
+  <Config Name="DOCKER_TLS_CERTDIR" Target="DOCKER_TLS_CERTDIR" Default="/certs" Mode="" Description="Container Variable: DOCKER_TLS_CERTDIR" Type="Variable" Display="always" Required="false" Mask="false">/certs</Config>
+</Container>
