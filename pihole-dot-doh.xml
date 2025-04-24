@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Pihole-DoT-DoH</Name>
+  <Deprecated>true</Deprecated>
+  <ModeratorComment>Deprecated due to Pihole v6 which rewrote its docker image.</ModeratorComment>
   <Repository>testdasi/pihole-dot-doh:latest</Repository>
   <Registry>https://hub.docker.com/r/testdasi/pihole-dot-doh/</Registry>
   <Network>br0</Network>
