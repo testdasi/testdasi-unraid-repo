@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>OpenVPN-HyRoSa</Name>
+  <Deprecated>true</Deprecated>
+  <ModeratorComment>This application has not been working nor updated for quite some time.</ModeratorComment>
   <Repository>testdasi/openvpn-hyrosa:latest</Repository>
   <Registry>https://registry.hub.docker.com/r/testdasi/openvpn-hyrosa/</Registry>
   <Network>bridge</Network>
